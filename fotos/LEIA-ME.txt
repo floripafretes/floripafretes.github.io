@@ -1,0 +1,12 @@
+PASTA DE FOTOS DO SITE
+
+Coloque aqui as fotos (JPG, PNG ou WEBP) que devem aparecer na seção "Nossos trabalhos".
+- Para adicionar: envie a foto para esta pasta no GitHub.
+- Para remover: apague a foto desta pasta.
+O site atualiza sozinho (pode levar alguns minutos).
+
+Dicas:
+- Use fotos reais da equipe, do caminhão e das mudanças.
+- Tamanho ideal: até 1600 px de largura e menos de 500 KB cada, para o site ficar rápido.
+- As fotos com nome que vem por último em ordem alfabética aparecem primeiro.
+  Ex.: 2026-09-24-mudanca-trindade.jpg aparece antes de 2026-08-10-frete-sofa.jpg

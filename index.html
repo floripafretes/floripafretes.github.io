@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floripa Fretes | Mudanças e Fretes em Florianópolis — Orçamento Grátis</title>
+<meta name="description" content="Mudanças residenciais e comerciais, pequenas mudanças e fretes em Florianópolis, São José, Palhoça e Biguaçu. Mudanças Florianópolis ⇄ Balneário Camboriú, todo SC e outros estados. Desmontagem, montagem e embalagem. Orçamento grátis pelo WhatsApp (48) 99951-5588.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MovingCompany",
+  "name": "Floripa Fretes",
+  "url": "https://floripafretes.com.br/",
+  "telephone": "+55-48-99951-5588",
+  "email": "floripafretes@gmail.com",
+  "address": {"@type": "PostalAddress","addressLocality": "Florianópolis","addressRegion": "SC","streetAddress": "Carianos","addressCountry": "BR"},
+  "areaServed": ["Florianópolis","São José","Palhoça","Biguaçu","Balneário Camboriú","Santa Catarina","Brasil"],
+  "sameAs": ["https://www.facebook.com/floripafretes"]
+}
+</script>
+<style>
+:root{
+  --navy:#0f2e36; --navy-2:#173a41; --teal:#3e9eb2; --teal-soft:#e6f4f7;
+  --orange:#e0583e; --orange-d:#c9452c; --wa:#25d366; --wa-d:#1ea952;
+  --ink:#1b2528; --muted:#5b6b70; --line:#e3e9eb; --bg:#ffffff; --bg-alt:#f5f8f9;
+  --radius:16px; --shadow:0 10px 30px rgba(15,46,54,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{line-height:1.15;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;color:var(--navy)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.lead{color:var(--muted);font-size:1.08rem;max-width:640px}
+section{padding:80px 0}
+.center{text-align:center}.center .lead{margin:12px auto 0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1rem;padding:16px 26px;border-radius:12px;border:0;cursor:pointer;transition:transform .15s,background .15s,box-shadow .15s;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 8px 22px rgba(37,211,102,.35)}
+.btn-wa:hover{background:var(--wa-d)}
+.btn-orange{background:var(--orange);color:#fff;box-shadow:0 8px 22px rgba(224,88,62,.35)}
+.btn-orange:hover{background:var(--orange-d)}
+.btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.4)}
+.btn-ghost:hover{border-color:#fff}
+.btn svg{width:22px;height:22px;flex:none}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{font-weight:800;font-size:1.35rem;color:var(--navy);display:flex;align-items:center;gap:10px}
+.logo-mark{width:38px;height:38px;border-radius:10px;background:var(--orange);display:grid;place-items:center;color:#fff}
+.logo-mark svg{width:22px;height:22px}
+.logo span{color:var(--orange)}
+.nav-links{display:flex;gap:26px;font-weight:600;font-size:.95rem;color:var(--muted);white-space:nowrap}
+.nav-phone,.nav .btn{white-space:nowrap}
+@media (max-width:1100px){.nav-links{display:none}}
+.nav-links a:hover{color:var(--navy)}
+.nav-cta{display:flex;align-items:center;gap:14px}
+.nav-phone{font-weight:700;color:var(--navy);font-size:.95rem}
+.nav .btn{padding:11px 18px;font-size:.92rem}
+
+/* Hero */
+.hero{position:relative;padding:64px 0 90px;background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 55%,#1f5461 100%);color:#fff;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:url("https://floripafretes.com.br/images/FloripaFretes/Images/Camionete3.jpg") center/cover;opacity:.12;mix-blend-mode:luminosity}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 14px;border-radius:99px;font-size:.85rem;font-weight:600;margin-bottom:22px}
+.badge .dot{width:8px;height:8px;border-radius:50%;background:var(--wa);box-shadow:0 0 0 4px rgba(37,211,102,.25)}
+.hero h1{font-size:clamp(2.1rem,5vw,3.5rem);font-weight:800;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:#ffb199}
+.hero p.sub{font-size:1.15rem;color:rgba(255,255,255,.85);max-width:560px;margin-bottom:28px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.checks{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.95rem;color:rgba(255,255,255,.9)}
+.checks li{list-style:none;display:flex;align-items:center;gap:8px}
+.checks svg{width:18px;height:18px;color:var(--wa);flex:none}
+
+/* Quote form */
+.quote{background:#fff;color:var(--ink);border-radius:20px;padding:28px;box-shadow:0 30px 60px rgba(0,0,0,.3)}
+.quote h3{font-size:1.35rem;color:var(--navy);margin-bottom:4px}
+.quote .hint{font-size:.9rem;color:var(--muted);margin-bottom:18px}
+.field{margin-bottom:12px}
+.field label{display:block;font-size:.82rem;font-weight:700;color:var(--navy);margin-bottom:5px}
+.field input,.field select{width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:.98rem;background:var(--bg-alt);color:var(--ink)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--teal);background:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.quote .btn{width:100%;margin-top:6px}
+.secure{display:flex;align-items:center;justify-content:center;gap:6px;font-size:.8rem;color:var(--muted);margin-top:10px}
+
+/* Trust bar */
+.trust{background:var(--bg-alt);padding:28px 0;border-bottom:1px solid var(--line)}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.trust-item{display:flex;align-items:center;gap:12px}
+.trust-item .ic{width:46px;height:46px;border-radius:12px;background:#fff;display:grid;place-items:center;color:var(--teal);box-shadow:0 2px 8px rgba(0,0,0,.05);flex:none}
+.trust-item .ic svg{width:24px;height:24px}
+.trust-item strong{display:block;color:var(--navy);font-size:.98rem}
+.trust-item span{font-size:.85rem;color:var(--muted)}
+
+/* Services */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
+.card:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.card .ic{width:54px;height:54px;border-radius:14px;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center;margin-bottom:18px}
+.card .ic svg{width:28px;height:28px}
+.card h3{font-size:1.2rem;color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.97rem;flex:1}
+.card a{margin-top:16px;font-weight:700;color:var(--orange);display:inline-flex;align-items:center;gap:6px}
+.card a:hover{gap:10px}
+
+/* Steps */
+.steps-sec{background:var(--navy);color:#fff}
+.steps-sec h2{color:#fff}.steps-sec .lead{color:rgba(255,255,255,.75)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;counter-reset:s}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:30px;position:relative}
+.step::before{counter-increment:s;content:counter(s);width:44px;height:44px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-weight:800;font-size:1.2rem;margin-bottom:18px}
+.step h3{font-size:1.2rem;margin-bottom:8px}
+.step p{color:rgba(255,255,255,.75);font-size:.97rem}
+
+/* Why us */
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.why-img{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);background:var(--teal-soft)}
+.why-img img{width:100%;height:auto;display:block}
+/* Vídeos */
+.videos-sec{background:var(--navy);color:#fff}
+.videos-sec h2{color:#fff}.videos-sec .lead{color:rgba(255,255,255,.75)}
+.videos{display:flex;gap:18px;justify-content:center;margin-top:44px}
+.vcard{position:relative;flex:0 1 auto;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 14px 34px rgba(0,0,0,.35)}
+.vcard video{display:block;height:440px;width:auto;max-width:100%}
+.vsound{position:absolute;right:10px;bottom:10px;border:0;border-radius:99px;background:rgba(0,0,0,.6);color:#fff;font:600 .82rem/1 inherit;font-family:inherit;padding:9px 13px;cursor:pointer;display:flex;align-items:center;gap:6px}
+.vsound:hover{background:rgba(0,0,0,.8)}
+@media (max-width:1100px){.videos{justify-content:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}.vcard{scroll-snap-align:center;flex:none}}
+@media (max-width:640px){.vcard video{height:400px}}
+.benefits{margin-top:28px;display:grid;gap:18px}
+.benefit{display:flex;gap:14px}
+.benefit .ic{width:40px;height:40px;border-radius:10px;background:#fdece8;color:var(--orange);display:grid;place-items:center;flex:none}
+.benefit .ic svg{width:22px;height:22px}
+.benefit h4{color:var(--navy);font-size:1.05rem;margin-bottom:2px}
+.benefit p{color:var(--muted);font-size:.95rem}
+
+/* Testimonials */
+.testi{background:var(--bg-alt)}
+.stars{color:#f5b301;letter-spacing:2px;font-size:1.05rem}
+.quote-card{background:#fff;border-radius:var(--radius);padding:26px;border:1px solid var(--line)}
+.quote-card p{margin:12px 0 18px;color:var(--ink);font-size:.98rem}
+.who{display:flex;align-items:center;gap:12px}
+.avatar{width:42px;height:42px;border-radius:50%;background:var(--teal);color:#fff;display:grid;place-items:center;font-weight:700}
+.who strong{display:block;color:var(--navy);font-size:.95rem}
+.who span{font-size:.82rem;color:var(--muted)}
+.g-summary{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:26px auto 34px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:10px 22px;width:fit-content;max-width:100%}
+.g-summary strong{font-size:1.3rem;color:var(--navy)}
+.g-summary .g-count{color:var(--muted);font-size:.92rem}
+.g-summary a{font-weight:700;color:var(--orange);font-size:.92rem}
+.g-logo{width:28px;height:28px;border-radius:50%;background:conic-gradient(#ea4335 0 25%,#fbbc05 0 50%,#34a853 0 75%,#4285f4 0);color:#fff;font-weight:800;display:grid;place-items:center;font-size:.9rem}
+.carousel{overflow:hidden;position:relative}
+.track{display:flex;transition:transform .6s ease}
+.track .quote-card{flex:0 0 calc((100% - 44px)/3);margin-right:22px;display:flex;flex-direction:column}
+.track .quote-card p{flex:1}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:24px}
+.dots button{width:9px;height:9px;border-radius:99px;border:0;background:#c9d4d7;cursor:pointer;padding:0;transition:width .3s,background .3s}
+.dots button.on{width:26px;background:var(--orange)}
+.fade-in{animation:fadein .6s ease}
+@keyframes fadein{from{opacity:.4}to{opacity:1}}
+/* Gallery */
+/* Faixa rolando: cada foto aparece inteira, na proporção original */
+.gallery{margin-top:40px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.gallery-track{display:flex;gap:14px;width:max-content;animation:rolar var(--dur,40s) linear infinite}
+.gallery:hover .gallery-track{animation-play-state:paused}
+@keyframes rolar{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.gallery button{border:0;padding:0;cursor:zoom-in;border-radius:14px;overflow:hidden;background:var(--teal-soft);flex:none;box-shadow:0 6px 18px rgba(15,46,54,.12)}
+.gallery img{height:300px;width:auto;display:block}
+@media (max-width:640px){.gallery img{height:210px}}
+@media (prefers-reduced-motion:reduce){.gallery{overflow-x:auto}.gallery-track{animation:none}}
+.btn-ghost-dark{background:transparent;color:var(--navy);border:2px solid var(--line)}
+.btn-ghost-dark:hover{border-color:var(--navy)}
+.lightbox{position:fixed;inset:0;z-index:100;background:rgba(5,15,18,.92);display:flex;align-items:center;justify-content:center;padding:20px}
+.lightbox[hidden]{display:none}
+.lightbox img{max-width:100%;max-height:88vh;border-radius:10px}
+.lightbox button{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:50%;width:48px;height:48px;font-size:1.8rem;cursor:pointer;line-height:1}
+.lb-close{top:18px;right:18px}.lb-prev{left:14px}.lb-next{right:14px}
+@media (max-width:960px){.track .quote-card{flex-basis:calc((100% - 22px)/2)}.gallery{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.track .quote-card{flex-basis:100%}.gallery{grid-template-columns:repeat(2,1fr)}}
+.hero-rating{display:flex;align-items:center;gap:10px;margin-top:22px;font-size:.95rem;color:rgba(255,255,255,.9)}
+.hero-rating .stars{font-size:1.1rem}
+.sample-note{margin-top:22px;font-size:.82rem;color:var(--orange-d);background:#fdece8;border-radius:8px;padding:8px 12px;display:inline-block}
+
+/* Area */
+.area .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.chip{background:var(--teal-soft);color:var(--navy);font-weight:600;font-size:.92rem;padding:9px 16px;border-radius:99px}
+.chip-route{background:var(--navy);color:#fff}
+.chip-alt{background:#fdece8;color:var(--orange-d)}
+.area-group{margin-top:22px}
+.area-group strong{display:block;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.area-group .chips{margin-top:10px}
+.map{border-radius:20px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/3;border:0;width:100%}
+
+/* FAQ */
+.faq-list{max-width:780px;margin:40px auto 0}
+details{border:1px solid var(--line);border-radius:14px;padding:0 22px;margin-bottom:12px;background:#fff}
+summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:700;color:var(--navy);display:flex;justify-content:space-between;align-items:center;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;color:var(--orange);font-weight:600;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{padding:0 0 20px;color:var(--muted)}
+
+/* Final CTA */
+.final{background:linear-gradient(135deg,var(--orange) 0%,#c33d25 100%);color:#fff;text-align:center;padding:80px 0}
+.final h2{color:#fff;margin-bottom:12px}
+.final p{font-size:1.12rem;opacity:.92;margin-bottom:30px}
+.final .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.final .btn-wa{box-shadow:0 10px 28px rgba(0,0,0,.25)}
+
+/* Footer */
+footer{background:var(--navy);color:rgba(255,255,255,.75);padding:56px 0 100px;font-size:.95rem}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px}
+footer h4{color:#fff;margin-bottom:14px;font-size:1rem}
+footer li{list-style:none;margin-bottom:8px}
+footer a:hover{color:#fff}
+footer .logo{color:#fff;margin-bottom:12px}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;font-size:.85rem;text-align:center;grid-column:1/-1}
+
+/* Floating WhatsApp + mobile bar */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:62px;height:62px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 10px 26px rgba(37,211,102,.5);animation:pulse 2.4s infinite}
+.wa-float svg{width:34px;height:34px;color:#fff}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+.mbar{display:none}
+.toast{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);z-index:120;background:var(--navy);color:#fff;padding:14px 18px;border-radius:12px;box-shadow:var(--shadow);font-size:.92rem;max-width:min(92vw,460px);text-align:center}
+.toast[hidden]{display:none}
+.toast p{margin-bottom:10px}
+.toast .btn{padding:12px 20px;font-size:.95rem}
+
+/* Responsive */
+@media (max-width:960px){
+  .nav-links,.nav-phone{display:none}
+  .hero .wrap,.why .wrap,.area .wrap{grid-template-columns:1fr}
+  .trust .wrap{grid-template-columns:1fr 1fr}
+  .grid3,.steps{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  section{padding:60px 0}
+  .wrap{padding:0 16px}
+  .hero{padding:40px 0 60px}
+  .hero-ctas .btn{width:100%}
+  .row2{grid-template-columns:1fr}
+  .trust .wrap{grid-template-columns:1fr;gap:14px}
+  .nav .btn{display:none}
+  .wa-float{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;box-shadow:0 -6px 20px rgba(0,0,0,.12);padding:10px;gap:8px}
+  .mbar .btn{padding:14px 10px;font-size:.95rem}
+  .mbar .btn-call{background:var(--navy);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.57.93.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.23-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.23 9.43-9.44 9.43zm8.03-17.46A11.28 11.28 0 0 0 12.05.72C5.8.72.7 5.8.7 12.06c0 2 .52 3.95 1.52 5.67L.6 23.28l5.68-1.49a11.3 11.3 0 0 0 5.77 1.47c6.26 0 11.35-5.09 11.35-11.34 0-3.03-1.18-5.88-3.32-8.02z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></g></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></g></symbol>
+  <symbol id="i-office" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></g></symbol>
+  <symbol id="i-tools" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></g></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.3 7 12 12l8.7-5M12 22V12"/></g></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></g></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><path d="M7 7h.01"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+</svg>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="#topo" class="logo"><span class="logo-mark"><svg><use href="#i-truck"/></svg></span>Floripa<span>Fretes</span></a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#por-que">Por que nós</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+5548999515588">(48) 99951-5588</a>
+      <a class="btn btn-wa" href="#" data-wa="Olá! Vim pelo site e gostaria de um orçamento."><svg><use href="#i-wa"/></svg>Orçamento grátis</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="topo">
+  <div class="wrap">
+    <div>
+      <div class="badge"><span class="dot"></span>Florianópolis · São José · Palhoça · Biguaçu</div>
+      <h1>Sua mudança em Floripa <em>sem dor de cabeça</em>, do jeito que você precisa.</h1>
+      <p class="sub">Mudanças residenciais e comerciais, pequenos fretes, desmontagem e montagem de móveis. Equipe cuidadosa, preço justo e orçamento grátis direto no WhatsApp.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-wa" href="#" data-wa="Olá! Gostaria de um orçamento para mudança."><svg><use href="#i-wa"/></svg>Pedir orçamento no WhatsApp</a>
+        <a class="btn btn-ghost" href="tel:+5548999515588"><svg><use href="#i-phone"/></svg>Ligar agora</a>
+      </div>
+      <ul class="checks">
+        <li><svg><use href="#i-check"/></svg>Orçamento sem compromisso</li>
+        <li><svg><use href="#i-check"/></svg>Montagem e desmontagem</li>
+        <li><svg><use href="#i-check"/></svg>Cuidado total com seus móveis</li>
+      </ul>
+      <a class="hero-rating" href="#avaliacoes"><span class="stars">★★★★★</span><span><strong>4,8 no Google</strong> · 54 avaliações de clientes</span></a>
+    </div>
+
+    <form class="quote" id="orcamento" novalidate>
+      <h3>Orçamento rápido em 1 minuto</h3>
+      <p class="hint">Preencha e receba o valor pelo WhatsApp.</p>
+      <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" type="text" placeholder="Ex.: Maria" required></div>
+      <div class="row2">
+        <div class="field"><label for="f-de">Saindo de (bairro/cidade)</label><input id="f-de" type="text" placeholder="Ex.: Trindade"></div>
+        <div class="field"><label for="f-para">Indo para</label><input id="f-para" type="text" placeholder="Ex.: São José"></div>
+      </div>
+      <div class="row2">
+        <div class="field"><label for="f-tipo">Tipo de serviço</label>
+          <select id="f-tipo">
+            <option>Mudança residencial</option>
+            <option>Mudança comercial</option>
+            <option>Mudança para outra cidade de SC / outro estado</option>
+            <option>Pequena mudança / poucos itens</option>
+            <option>Frete de móvel ou objeto</option>
+            <option>Montagem / desmontagem</option>
+            <option>Retirada de material / descarte</option>
+            <option>Guarda-volume</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-data">Data desejada</label><input id="f-data" type="date"></div>
+      </div>
+      <div class="field"><label for="f-imovel">Tamanho aproximado</label>
+        <select id="f-imovel">
+          <option>Apartamento / casa de 1 quarto</option>
+          <option>2 quartos</option>
+          <option>3 quartos ou mais</option>
+          <option>Apenas alguns itens</option>
+          <option>Escritório / comércio</option>
+        </select>
+      </div>
+      <button class="btn btn-orange" type="submit"><svg><use href="#i-wa"/></svg>Quero meu orçamento grátis</button>
+      <div class="secure"><svg width="14" height="14"><use href="#i-shield"/></svg>Seus dados vão só para nós. Resposta rápida.</div>
+    </form>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust">
+  <div class="wrap">
+    <div class="trust-item"><div class="ic" style="color:#f5b301;font-size:1.4rem">★</div><div><strong>4,8 no Google</strong><span>54 avaliações de clientes</span></div></div>
+    <div class="trust-item"><div class="ic"><svg><use href="#i-clock"/></svg></div><div><strong>Agilidade e pontualidade</strong><span>Chegamos no horário combinado</span></div></div>
+    <div class="trust-item"><div class="ic"><svg><use href="#i-tag"/></svg></div><div><strong>Bom preço</strong><span>Valor combinado antes de começar</span></div></div>
+    <div class="trust-item"><div class="ic"><svg><use href="#i-pin"/></svg></div><div><strong>Somos de Floripa</strong><span>Base no Carianos, sul da Ilha</span></div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="servicos">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Nossos serviços</span>
+      <h2>Tudo o que sua mudança precisa, com uma única empresa</h2>
+      <p class="lead">Da caixa de livros ao escritório inteiro: você fala com a gente e a gente resolve.</p>
+    </div>
+    <div class="grid3">
+      <div class="card"><div class="ic"><svg><use href="#i-home"/></svg></div><h3>Mudança residencial</h3><p>Casa ou apartamento, com cuidado em cada móvel, eletrodoméstico e objeto frágil. Você só aponta onde fica cada coisa.</p><a href="#" data-wa="Olá! Quero orçamento para mudança residencial.">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic"><svg><use href="#i-office"/></svg></div><h3>Mudança comercial</h3><p>Escritórios, lojas e consultórios. Planejamos para sua empresa parar o mínimo possível.</p><a href="#" data-wa="Olá! Quero orçamento para mudança comercial.">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic"><svg><use href="#i-truck"/></svg></div><h3>Pequenas mudanças e fretes</h3><p>Comprou um sofá, geladeira ou vai levar poucos itens? Frete rápido e com preço justo.</p><a href="#" data-wa="Olá! Preciso de um frete / pequena mudança.">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic"><svg><use href="#i-tools"/></svg></div><h3>Desmontagem e montagem</h3><p>Guarda-roupas, camas, estantes e armários desmontados e montados com atenção, sem riscos e sem peças perdidas.</p><a href="#" data-wa="Olá! Preciso de desmontagem e montagem de móveis.">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic"><svg><use href="#i-box"/></svg></div><h3>Empacotamento</h3><p>Embalamos louças, roupas e objetos para que tudo chegue inteiro. Economize tempo e evite quebras.</p><a href="#" data-wa="Olá! Tenho interesse em empacotamento.">Pedir orçamento →</a></div>
+      <div class="card"><div class="ic"><svg><use href="#i-trash"/></svg></div><h3>Retirada de material e guarda-volume</h3><p>Descarte de móveis e entulho leve, ou um lugar seguro para guardar seus pertences entre uma casa e outra.</p><a href="#" data-wa="Olá! Preciso de retirada de material / guarda-volume.">Pedir orçamento →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="steps-sec" id="como-funciona">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow" style="color:#ffb199">Simples assim</span>
+      <h2>Sua mudança resolvida em 3 passos</h2>
+      <p class="lead">Sem visita demorada, sem burocracia.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Chame no WhatsApp</h3><p>Conte de onde sai, para onde vai e o que precisa levar. Se quiser, mande fotos dos móveis.</p></div>
+      <div class="step"><h3>Receba o orçamento</h3><p>Você recebe o valor fechado e escolhe a data. Tudo combinado antes, sem surpresa no final.</p></div>
+      <div class="step"><h3>A gente cuida do resto</h3><p>No dia marcado, a equipe chega, desmonta, carrega, transporta e monta tudo no endereço novo.</p></div>
+    </div>
+    <div class="center" style="margin-top:40px"><a class="btn btn-wa" href="#" data-wa="Olá! Quero começar meu orçamento."><svg><use href="#i-wa"/></svg>Começar agora</a></div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="por-que">
+  <div class="wrap">
+    <div class="why-img">
+      <img src="fotos/09-equipe-em-acao.webp" alt="Floripa Fretes e Mudanças: caminhão carregado com mudança protegida, atendimento em Floripa e região" loading="lazy" onerror="this.style.display='none'">
+    </div>
+    <div>
+      <span class="eyebrow">Por que escolher a Floripa Fretes</span>
+      <h2>Mudar já é trabalhoso. Transportar suas coisas não precisa ser.</h2>
+      <div class="benefits">
+        <div class="benefit"><div class="ic"><svg><use href="#i-shield"/></svg></div><div><h4>Seus móveis protegidos</h4><p>Embalagem, amarração e manuseio cuidadoso para que tudo chegue como saiu.</p></div></div>
+        <div class="benefit"><div class="ic"><svg><use href="#i-tag"/></svg></div><div><h4>Preço combinado antes</h4><p>Você sabe quanto vai pagar antes de começar. Nada de taxa surpresa no dia.</p></div></div>
+        <div class="benefit"><div class="ic"><svg><use href="#i-clock"/></svg></div><div><h4>Pontualidade</h4><p>Respeitamos seu tempo e o horário do condomínio, da portaria e do elevador.</p></div></div>
+        <div class="benefit"><div class="ic"><svg><use href="#i-phone"/></svg></div><div><h4>Fala direto com quem faz</h4><p>Nada de central de atendimento. Você conversa com a equipe responsável pela sua mudança.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS: avaliações reais do Google Maps (Floripa Fretes e Mudanças) -->
+<section class="testi" id="avaliacoes">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Quem já mudou com a gente</span>
+      <h2>Nota 4,8 no Google, com 54 avaliações</h2>
+      <p class="lead">Veja o que nossos clientes falam do serviço:</p>
+    </div>
+    <div class="g-summary">
+      <span class="g-logo">G</span>
+      <strong>4,8</strong><span class="stars">★★★★★</span><span class="g-count">54 avaliações no Google</span>
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=Floripa+Fretes+e+Mudan%C3%A7as+Florian%C3%B3polis" target="_blank" rel="noopener">Ver todas →</a>
+    </div>
+    <div class="carousel" id="reviews">
+    <div class="track">
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“A turma do Floripa Fretes e Mudanças, com o Rodrigo no comando, nos ajudou (pela segunda vez já) de forma impecável. Fizeram o transporte entre 3 lugares (o nosso Café e 2 apartamentos), com extrema correção, pontualidade, simpatia e eficiência. Foi top, 100%.”</p><div class="who"><div class="avatar">O</div><div><strong>Oscar Bruna Romero</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Muito bom o serviço realizado! Desde o atendimento inicial até a entrega dos móveis no destino. Foram muito cuidadosos, rápidos e eficientes. E o melhor: preço muito justo! Super indico!”</p><div class="who"><div class="avatar">L</div><div><strong>Lais Campos</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Profissionais excelentes, muito cuidadosos, queridos e pacientes. Além do preço cobrado ser muito justo. Recomendo o trabalho!”</p><div class="who"><div class="avatar">K</div><div><strong>Klay Silva</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Super atenciosos, rápidos e cuidadosos. Preço justo. Chamarei novamente sempre que necessário e recomendo a quem precisar!”</p><div class="who"><div class="avatar">L</div><div><strong>Leonardo Esgalbo</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Excelentes profissionais! Recomendo muito o trabalho deles, organizados e ágeis.”</p><div class="who"><div class="avatar">M</div><div><strong>Mariana Adami Borgert</strong><span>Avaliação no Google</span></div></div></div>
+    </div>
+    <div class="dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA: lê automaticamente as imagens da pasta "fotos" do repositório no GitHub e mostra numa faixa rolando -->
+<section id="fotos" hidden>
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Nossos trabalhos</span>
+      <h2>Mudanças que já fizemos</h2>
+      <p class="lead">Fotos reais da nossa equipe em ação na Grande Florianópolis.</p>
+    </div>
+  </div>
+  <div class="gallery"><div class="gallery-track" id="gallery"></div></div>
+  <div class="wrap">
+  </div>
+</section>
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Fechar">×</button>
+  <button class="lb-nav lb-prev" aria-label="Anterior">‹</button>
+  <img alt="">
+  <button class="lb-nav lb-next" aria-label="Próxima">›</button>
+</div>
+
+<!-- VÍDEOS (arquivos na pasta "videos") -->
+<section class="videos-sec" id="videos">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow" style="color:#ffb199">Vídeos</span>
+      <h2>Veja nossa equipe em ação</h2>
+      <p class="lead">Como cuidamos da sua mudança, do carregamento à entrega.</p>
+    </div>
+    <div class="videos">
+      <div class="vcard"><video src="videos/video-3-embalamos-com-cuidado.mp4" poster="videos/video-3-embalamos-com-cuidado.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="vcard"><video src="videos/video-2-mudancas-residenciais.mp4" poster="videos/video-2-mudancas-residenciais.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="vcard"><video src="videos/video-4-cuidado-com-patrimonio.mp4" poster="videos/video-4-cuidado-com-patrimonio.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="vcard"><video src="videos/video-1-conte-com-a-gente.mp4" poster="videos/video-1-conte-com-a-gente.jpg" muted loop playsinline preload="none"></video></div>
+    </div>
+    <div class="center" style="margin-top:36px"><a class="btn btn-wa" href="#" data-wa="Olá! Vi os vídeos no site e quero um orçamento."><svg><use href="#i-wa"/></svg>Quero esse cuidado na minha mudança</a></div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section class="area">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Área de atendimento</span>
+      <h2>Da Grande Florianópolis para onde você precisar</h2>
+      <p class="lead" style="margin-top:12px">Saímos do Carianos, no sul da Ilha. Nosso dia a dia é a Grande Florianópolis, e também levamos sua mudança para outras cidades de Santa Catarina e outros estados.</p>
+      <div class="area-group">
+        <strong>Atendimento principal</strong>
+        <div class="chips"><span class="chip">Florianópolis</span><span class="chip">São José</span><span class="chip">Palhoça</span><span class="chip">Biguaçu</span></div>
+      </div>
+      <div class="area-group">
+        <strong>Rota mais pedida</strong>
+        <div class="chips"><span class="chip chip-route">Florianópolis ⇄ Balneário Camboriú</span><span class="chip">Cidades próximas no litoral catarinense</span></div>
+      </div>
+      <div class="area-group">
+        <strong>Sob consulta</strong>
+        <div class="chips"><span class="chip chip-alt">Todo o estado de Santa Catarina</span><span class="chip chip-alt">Mudanças interestaduais</span></div>
+      </div>
+      <div style="margin-top:28px"><a class="btn btn-wa" href="#" data-wa="Olá! Preciso de uma mudança de [cidade de origem] para [cidade de destino]. Vocês atendem?"><svg><use href="#i-wa"/></svg>Consultar minha rota</a></div>
+    </div>
+    <iframe class="map" title="Mapa: Carianos, Florianópolis" loading="lazy" src="https://www.google.com/maps?q=Carianos,+Florian%C3%B3polis+-+SC&output=embed"></iframe>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="duvidas" style="background:var(--bg-alt)">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Antes de fechar, você quer saber…</h2>
+    </div>
+    <div class="faq-list">
+      <details><summary>Como é feito o orçamento? Precisa de visita?</summary><p>Na maioria dos casos não. Você conta pelo WhatsApp o que vai levar (fotos ajudam muito) e já recebe o valor. Para mudanças grandes ou comerciais, podemos combinar uma visita.</p></details>
+      <details><summary>Vocês desmontam e montam os móveis?</summary><p>Sim. Desmontamos no endereço atual e montamos no novo: guarda-roupas, camas, estantes, racks e mais.</p></details>
+      <details><summary>Fazem frete de um item só?</summary><p>Fazemos. Sofá, geladeira, máquina de lavar, móvel comprado em loja ou marketplace: chame no WhatsApp com a origem e o destino.</p></details>
+      <details><summary>Vocês embalam as coisas?</summary><p>Sim, oferecemos o serviço de empacotamento para louças, roupas e objetos. Se preferir embalar por conta própria, orientamos como fazer.</p></details>
+      <details><summary>Vocês fazem mudança para outras cidades ou outros estados?</summary><p>Sim. Nosso atendimento principal é Florianópolis, São José, Palhoça e Biguaçu, e fazemos com frequência a rota Florianópolis ⇄ Balneário Camboriú e cidades próximas. Também atendemos qualquer cidade de Santa Catarina e mudanças interestaduais, sob consulta. Chame no WhatsApp informando a origem, o destino e o que vai levar para receber o orçamento.</p></details>
+      <details><summary>Com quanto tempo de antecedência devo agendar?</summary><p>Quanto antes, melhor, principalmente no fim e no começo do mês e aos sábados, que são os dias mais procurados. Para fretes pequenos, muitas vezes conseguimos no mesmo dia ou no dia seguinte.</p></details>
+      <details><summary>Vocês têm guarda-volume?</summary><p>Sim. Se a casa nova ainda não está pronta, guardamos seus pertences com segurança até a data da entrega.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="wrap">
+    <h2>Pronto para mudar sem estresse?</h2>
+    <p>Mande uma mensagem agora e receba seu orçamento grátis, sem compromisso.</p>
+    <div class="ctas">
+      <a class="btn btn-wa" href="#" data-wa="Olá! Quero um orçamento para minha mudança."><svg><use href="#i-wa"/></svg>Chamar no WhatsApp</a>
+      <a class="btn btn-ghost" href="tel:+5548999515588"><svg><use href="#i-phone"/></svg>(48) 99951-5588</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="logo"><span class="logo-mark"><svg><use href="#i-truck"/></svg></span>Floripa<span>Fretes</span></div>
+      <p>Mudanças residenciais e comerciais, fretes, montagem e desmontagem de móveis em Florianópolis e região. Cuidado com seu patrimônio, agilidade e bom preço.</p>
+    </div>
+    <div>
+      <h4>Serviços</h4>
+      <ul><li>Mudança residencial</li><li>Mudança comercial</li><li>Pequenas mudanças</li><li>Desmontagem e montagem</li><li>Empacotamento</li><li>Guarda-volume</li></ul>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="#" data-wa="Olá! Vim pelo site.">WhatsApp: (48) 99951-5588</a></li>
+        <li><a href="mailto:floripafretes@gmail.com">floripafretes@gmail.com</a></li>
+        <li>Carianos, Florianópolis/SC</li>
+        <li><a href="https://www.facebook.com/floripafretes" target="_blank" rel="noopener">Facebook</a></li>
+      </ul>
+    </div>
+    <div class="copy">© <span id="ano"></span> Floripa Fretes · Mudanças e Fretes em Florianópolis/SC</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" hidden></div>
+
+<!-- Floating WhatsApp (desktop) -->
+<a class="wa-float" href="#" data-wa="Olá! Vim pelo site e gostaria de um orçamento." aria-label="Falar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<!-- Mobile bottom bar -->
+<div class="mbar">
+  <a class="btn btn-call" href="tel:+5548999515588"><svg><use href="#i-phone"/></svg>Ligar</a>
+  <a class="btn btn-wa" href="#" data-wa="Olá! Vim pelo site e gostaria de um orçamento."><svg><use href="#i-wa"/></svg>Orçamento grátis</a>
+</div>
+
+<script>
+  var WA = "5548999515588";
+  // api.whatsapp.com mantém o texto pré-preenchido com mais confiabilidade que wa.me (app do Windows/Mac às vezes descarta)
+  function waLink(msg){ return "https://api.whatsapp.com/send?phone=" + WA + "&text=" + encodeURIComponent(msg); }
+  var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+  // Copia a mensagem como garantia: se o WhatsApp abrir vazio, o cliente só cola
+  function copyMsg(msg){
+    try { if (navigator.clipboard) return navigator.clipboard.writeText(msg).catch(function(){}); } catch(e) {}
+  }
+  function toast(text, link){
+    var t = document.getElementById("toast");
+    t.innerHTML = "";
+    var p = document.createElement("p"); p.textContent = text; t.appendChild(p);
+    if (link) {
+      var a = document.createElement("a");
+      a.href = link; a.target = "_blank"; a.rel = "noopener"; a.className = "btn btn-wa";
+      a.innerHTML = '<svg><use href="#i-wa"/></svg>Abrir WhatsApp';
+      t.appendChild(a);
+    }
+    t.hidden = false;
+    clearTimeout(t._h); t._h = setTimeout(function(){ t.hidden = true; }, 15000);
+  }
+
+  document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.href = waLink(a.getAttribute("data-wa"));
+    a.target = "_blank"; a.rel = "noopener";
+  });
+
+  document.getElementById("orcamento").addEventListener("submit", function(e){
+    e.preventDefault();
+    var v = function(id){ return document.getElementById(id).value.trim(); };
+    var data = v("f-data") ? new Date(v("f-data") + "T12:00").toLocaleDateString("pt-BR") : "a combinar";
+    var msg = "Olá! Meu nome é " + (v("f-nome") || "—") + " e gostaria de um orçamento.\n\n" +
+      "Serviço: " + v("f-tipo") + "\n" +
+      "Saindo de: " + (v("f-de") || "—") + "\n" +
+      "Indo para: " + (v("f-para") || "—") + "\n" +
+      "Tamanho: " + v("f-imovel") + "\n" +
+      "Data: " + data;
+    var url = waLink(msg);
+    copyMsg(msg);
+    // Mostra sempre um botão de reserva: se o navegador bloquear a abertura automática, o cliente clica nele
+    toast("Seu orçamento está pronto! Se o WhatsApp não abrir sozinho, toque no botão abaixo. Se a mensagem vier vazia, é só colar: ela já foi copiada.", url);
+    try {
+      // No celular, abrir na mesma aba evita bloqueio de pop-up (Instagram, Facebook, Safari)
+      if (isMobile) { setTimeout(function(){ location.href = url; }, 600); }
+      else { window.open(url, "_blank"); }
+    } catch(err) {}
+  });
+
+  document.getElementById("ano").textContent = new Date().getFullYear();
+
+  /* ===== Carrossel de avaliações: mostra 3 (2 no tablet, 1 no celular) e gira sozinho ===== */
+  (function(){
+    var box = document.getElementById("reviews"), track = box.querySelector(".track");
+    var cards = [].slice.call(track.children), total = cards.length, idx = 0, timer;
+    var dots = box.querySelector(".dots");
+    // embaralha a ordem a cada visita para parecer sempre "novo"
+    cards.sort(function(){ return Math.random() - .5; }).forEach(function(c){ track.appendChild(c); });
+    cards.forEach(function(c){ track.appendChild(c.cloneNode(true)); }); // cópias para o loop infinito
+    for (var i = 0; i < total; i++) {
+      var d = document.createElement("button"); d.setAttribute("aria-label", "Avaliação " + (i + 1));
+      d.onclick = (function(n){ return function(){ go(n); restart(); }; })(i);
+      dots.appendChild(d);
+    }
+    function step(){ var c = track.children[0]; return c.getBoundingClientRect().width + parseFloat(getComputedStyle(c).marginRight); }
+    function go(n, instant){
+      idx = n;
+      track.style.transition = instant ? "none" : "";
+      track.style.transform = "translateX(" + (-idx * step()) + "px)";
+      [].forEach.call(dots.children, function(d, i){ d.classList.toggle("on", i === idx % total); });
+    }
+    function next(){
+      go(idx + 1);
+      if (idx === total) setTimeout(function(){ go(0, true); }, 650);
+    }
+    function restart(){ clearInterval(timer); timer = setInterval(next, 5000); }
+    box.addEventListener("mouseenter", function(){ clearInterval(timer); });
+    box.addEventListener("mouseleave", restart);
+    var x0 = null;
+    box.addEventListener("touchstart", function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+    box.addEventListener("touchend", function(e){
+      if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) { dx < 0 ? next() : go((idx - 1 + total) % total); restart(); }
+    });
+    window.addEventListener("resize", function(){ go(idx, true); });
+    go(0, true); restart();
+  })();
+
+  /* ===== Vídeos: tocam sem som quando aparecem na tela e pausam quando saem; botão liga o som ===== */
+  (function(){
+    var vids = [].slice.call(document.querySelectorAll(".vcard video"));
+    var ICON_OFF = "🔇 Ativar som", ICON_ON = "🔊 Som ligado";
+    vids.forEach(function(v){
+      var b = document.createElement("button");
+      b.className = "vsound"; b.type = "button"; b.textContent = ICON_OFF;
+      b.onclick = function(){
+        var ligar = v.muted;
+        vids.forEach(function(o){ o.muted = true; if (o._btn) o._btn.textContent = ICON_OFF; }); // só um vídeo com som por vez
+        v.muted = !ligar; b.textContent = ligar ? ICON_ON : ICON_OFF;
+        if (ligar) { v.currentTime = 0; v.play().catch(function(){}); }
+      };
+      v._btn = b; v.parentNode.appendChild(b);
+      v.addEventListener("click", function(){ v.paused ? v.play().catch(function(){}) : v.pause(); });
+    });
+    if (!("IntersectionObserver" in window)) { vids.forEach(function(v){ v.preload = "metadata"; }); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        var v = e.target;
+        if (e.isIntersecting) { v.preload = "auto"; v.play().catch(function(){}); }
+        else v.pause();
+      });
+    }, {threshold: .5});
+    vids.forEach(function(v){ io.observe(v); });
+  })();
+
+  /* ===== Galeria automática: lista as imagens da pasta "fotos" do GitHub =====
+     Para adicionar uma foto: envie para a pasta "fotos" no GitHub.
+     Para remover: apague da pasta. Não precisa mexer neste arquivo.
+     Se o site estiver em domínio próprio, preencha usuário e repositório abaixo. */
+  var GITHUB_USUARIO = "";        // ex.: "floripafretes"
+  var GITHUB_REPOSITORIO = "";    // ex.: "floripa-fretes"
+  var PASTA_FOTOS = "fotos";
+  (function(){
+    var user = GITHUB_USUARIO, repo = GITHUB_REPOSITORIO;
+    var m = location.hostname.match(/^([^.]+)\.github\.io$/);
+    if (m) {
+      var seg = location.pathname.split("/")[1] || "";
+      // em "usuario.github.io" (site raiz) o repositório se chama "usuario.github.io"
+      user = user || m[1];
+      repo = repo || (seg && seg.indexOf(".") < 0 ? seg : m[1] + ".github.io");
+    }
+    // Reserva para ver o site fora do GitHub (no computador): usa as fotos já conhecidas da pasta
+    var FOTOS_RESERVA = ["09-equipe-em-acao.webp","08-moveis-embalados.webp","07-carga-protegida-com-lona.webp","06-mudanca-completa.jpg","05-mudanca-residencial.jpg","03-carga-amarrada-com-rede.jpg","02-caminhao-carregado.webp","01-carga-com-cobertores.jpg"];
+
+    var sec = document.getElementById("fotos"), grid = document.getElementById("gallery");
+    var lb = document.getElementById("lightbox"), lbImg = lb.querySelector("img");
+    var fotos = [], cur = 0;
+    var api = "https://api.github.com/repos/" + user + "/" + repo + "/contents/" + PASTA_FOTOS;
+    var cacheKey = "fotos:" + api;
+
+    function render(list){
+      fotos = list.filter(function(f){ return f.type === "file" && /\.(jpe?g|png|webp|gif|avif)$/i.test(f.name); })
+                  .map(function(f){ return f.download_url; })
+                  .reverse();
+      if (!fotos.length) return;
+      sec.hidden = false;
+      // Repete a lista até encher a tela e depois duplica, para a faixa rolar sem emenda
+      var reps = Math.max(1, Math.ceil(6 / fotos.length)), itens = [];
+      for (var r = 0; r < reps * 2; r++) fotos.forEach(function(src, n){ itens.push(n); });
+      itens.forEach(function(n, i){
+        var b = document.createElement("button");
+        b.setAttribute("aria-label", "Ampliar foto " + (n + 1));
+        if (i >= itens.length / 2) b.setAttribute("aria-hidden", "true"), b.tabIndex = -1;
+        b.innerHTML = '<img alt="Mudança realizada pela Floripa Fretes">';
+        b.firstChild.src = fotos[n];
+        b.onclick = function(){ open(n); };
+        grid.appendChild(b);
+      });
+      grid.style.setProperty("--dur", (fotos.length * reps * 6) + "s");
+    }
+    function open(n){ cur = (n + fotos.length) % fotos.length; lbImg.src = fotos[cur]; lb.hidden = false; }
+    lb.querySelector(".lb-close").onclick = function(){ lb.hidden = true; };
+    lb.querySelector(".lb-prev").onclick = function(){ open(cur - 1); };
+    lb.querySelector(".lb-next").onclick = function(){ open(cur + 1); };
+    lb.addEventListener("click", function(e){ if (e.target === lb) lb.hidden = true; });
+    document.addEventListener("keydown", function(e){
+      if (lb.hidden) return;
+      if (e.key === "Escape") lb.hidden = true;
+      if (e.key === "ArrowLeft") open(cur - 1);
+      if (e.key === "ArrowRight") open(cur + 1);
+    });
+
+    if (!user || !repo) {
+      return render(FOTOS_RESERVA.slice().reverse().map(function(n){ return {type:"file", name:n, download_url: (window.FOTOS_EMBUTIDAS && FOTOS_EMBUTIDAS[n]) || (PASTA_FOTOS + "/" + n)}; }));
+    }
+    try {
+      var c = JSON.parse(sessionStorage.getItem(cacheKey) || "null");
+      if (c && Date.now() - c.t < 10 * 60 * 1000) return render(c.d);
+    } catch(e) {}
+    fetch(api).then(function(r){ return r.ok ? r.json() : []; }).then(function(d){
+      if (!Array.isArray(d)) return;
+      try { sessionStorage.setItem(cacheKey, JSON.stringify({t: Date.now(), d: d})); } catch(e) {}
+      render(d);
+    }).catch(function(){});
+  })();
+</script>
+</body>
+</html>
