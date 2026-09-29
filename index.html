@@ -4,6 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Floripa Fretes e Mudanças | Mais de 20 anos de experiência em Florianópolis — Orçamento Grátis</title>
+<!-- ===== TAGS DO GOOGLE: preencha só estas 3 linhas (deixe "" o que não usar) ===== -->
+<script>
+  var GOOGLE_ADS_ID     = "AW-874589351";   // ex.: "AW-123456789"
+  var CONVERSAO_WHATS   = "AW-874589351/3p6JCND68YodEKfZhKED";   // ex.: "AW-123456789/AbCdEfGhIjKlMn" (ID/rótulo da conversão)
+  var GA4_ID            = "G-89YPPZX7FL";   // ex.: "G-ABC123XYZ" (opcional, Google Analytics)
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  (function(){
+    var principal = GOOGLE_ADS_ID || GA4_ID;
+    if (!principal) return;
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + principal;
+    document.head.appendChild(s);
+    gtag("js", new Date());
+    if (GOOGLE_ADS_ID) gtag("config", GOOGLE_ADS_ID);
+    if (GA4_ID) gtag("config", GA4_ID);
+  })();
+  // Registra 1 conversão por clique em qualquer botão de WhatsApp (e no envio do formulário)
+  function conversaoWhats(origem){
+    if (CONVERSAO_WHATS) gtag("event", "conversion", { send_to: CONVERSAO_WHATS, transport_type: "beacon" });
+    if (GA4_ID) gtag("event", "clique_whatsapp", { origem: origem, transport_type: "beacon" });
+  }
+</script>
 <meta name="description" content="Floripa Fretes e Mudanças, mais de 20 anos de experiência. Mudanças residenciais e comerciais, pequenas mudanças e fretes em Florianópolis, São José, Palhoça e Biguaçu. Mudanças Florianópolis ⇄ Balneário Camboriú, todo SC e outros estados. Desmontagem, montagem e embalagem. Orçamento grátis pelo WhatsApp (48) 99951-5588.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -626,7 +650,15 @@ footer .logo{color:#fff;margin-bottom:12px}
     clearTimeout(t._h); t._h = setTimeout(function(){ t.hidden = true; }, 15000);
   }
 
+  function origemDo(el){
+    if (el.closest(".mbar")) return "barra_celular";
+    if (el.closest(".wa-float")) return "botao_flutuante";
+    if (el.closest("header")) return "cabecalho";
+    if (el.closest("footer")) return "rodape";
+    var sec = el.closest("section"); return sec ? (sec.id || sec.className.split(" ")[0] || "pagina") : "pagina";
+  }
   document.querySelectorAll("[data-wa]").forEach(function(a){
+    a.addEventListener("click", function(){ conversaoWhats(origemDo(a)); });
     a.href = waLink(a.getAttribute("data-wa"));
     a.target = "_blank"; a.rel = "noopener";
   });
@@ -647,6 +679,7 @@ footer .logo{color:#fff;margin-bottom:12px}
       "Data: " + data;
     var url = waLink(msg);
     copyMsg(msg);
+    conversaoWhats("formulario");
     // Mostra sempre um botão de reserva: se o navegador bloquear a abertura automática, o cliente clica nele
     toast("Seu orçamento está pronto! Se o WhatsApp não abrir sozinho, toque no botão abaixo. Se a mensagem vier vazia, é só colar: ela já foi copiada.", url);
     try {
