@@ -119,6 +119,10 @@ header{position:sticky;top:0;z-index:50;background:#111;border-bottom:3px solid 
 .card p{color:var(--muted);font-size:.97rem;flex:1}
 .card a{margin-top:16px;font-weight:700;color:var(--gold-text);display:inline-flex;align-items:center;gap:6px}
 .card a:hover{gap:10px}
+.card-wide{grid-column:1/-1;flex-direction:row;align-items:center;gap:22px}
+.card-wide .ic{margin-bottom:0;flex:none}
+.card-wide a{margin-top:0;white-space:nowrap}
+@media (max-width:960px){.card-wide{flex-direction:column;align-items:flex-start;gap:0}.card-wide .ic{margin-bottom:18px}.card-wide a{margin-top:16px}}
 
 /* Steps */
 .steps-sec{background:var(--navy);color:#fff}
@@ -286,6 +290,7 @@ footer .logo{color:#fff;margin-bottom:12px}
   <symbol id="i-tag" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><path d="M7 7h.01"/></g></symbol>
   <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
   <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
 </svg>
 
@@ -323,12 +328,12 @@ footer .logo{color:#fff;margin-bottom:12px}
         <li><svg><use href="#i-check"/></svg>Cuidado total com seus móveis</li>
         <li><svg><use href="#i-check"/></svg>Fornecemos caixas e plástico bolha</li>
       </ul>
-      <a class="hero-rating" href="#avaliacoes"><span class="stars">★★★★★</span><span><strong>4,8 no Google</strong> · 54 avaliações de clientes</span></a>
+      <a class="hero-rating" href="#avaliacoes"><span class="stars">★★★★★</span><span><strong>Veja as avaliações dos clientes no Google →</strong></span></a>
     </div>
 
     <form class="quote" id="orcamento" novalidate>
       <h3>Orçamento rápido</h3>
-      <p class="hint">Preencha e receba o valor pelo WhatsApp.</p>
+      <p class="hint">O preenchimento dos campos não é obrigatório, mas quanto mais preencher, melhor e mais rápido será o seu orçamento via WhatsApp.</p>
       <div class="field"><label for="f-nome">Seu nome</label><input id="f-nome" type="text" placeholder="Ex.: Maria" required></div>
       <div class="row2">
         <div class="field"><label for="f-de">Saindo de (bairro/cidade)</label><input id="f-de" type="text" placeholder="Ex.: Trindade"></div>
@@ -367,6 +372,14 @@ footer .logo{color:#fff;margin-bottom:12px}
           <select id="f-caixas"><option>Não preciso</option><option>Preciso de caixas e plástico bolha</option><option>Só caixas</option><option>Só plástico bolha</option></select>
         </div>
       </div>
+      <div class="field"><label for="f-reparos">Precisa de pequenos reparos de pedreiro ou elétrica? (sob consulta)</label>
+        <select id="f-reparos">
+          <option>Não preciso</option>
+          <option>Sim, pequenos reparos de pedreiro</option>
+          <option>Sim, pequenos reparos elétricos</option>
+          <option>Sim, de pedreiro e elétricos</option>
+        </select>
+      </div>
       <div class="field"><label for="f-ajuda">Ajudantes para carregar</label>
         <select id="f-ajuda">
           <option>Preciso de ajudantes da equipe</option>
@@ -382,8 +395,8 @@ footer .logo{color:#fff;margin-bottom:12px}
 <!-- TRUST BAR -->
 <div class="trust">
   <div class="wrap">
-    <div class="trust-item"><div class="ic" style="color:#f5b301;font-size:1.4rem">★</div><div><strong>4,8 no Google</strong><span>54 avaliações de clientes</span></div></div>
     <div class="trust-item"><div class="ic" style="background:var(--orange);color:#111;font-weight:800">20+</div><div><strong>Mais de 20 anos</strong><span>de experiência em mudanças</span></div></div>
+    <div class="trust-item"><div class="ic"><svg><use href="#i-box"/></svg></div><div><strong>Mudança bem protegida</strong><span>Fornecemos caixas e plástico bolha</span></div></div>
     <div class="trust-item"><div class="ic"><svg><use href="#i-tag"/></svg></div><div><strong>Bom preço</strong><span>Valor combinado antes de começar</span></div></div>
     <div class="trust-item"><div class="ic"><svg><use href="#i-pin"/></svg></div><div><strong>Somos de Floripa</strong><span>Base no Carianos, sul da Ilha</span></div></div>
   </div>
@@ -404,6 +417,7 @@ footer .logo{color:#fff;margin-bottom:12px}
       <div class="card"><div class="ic"><svg><use href="#i-tools"/></svg></div><h3>Desmontagem e montagem</h3><p>Guarda-roupas, camas, estantes e armários desmontados e montados com atenção, sem riscos e sem peças perdidas.</p><a href="#" data-wa="Olá! Preciso de desmontagem e montagem de móveis.">Pedir orçamento →</a></div>
       <div class="card"><div class="ic"><svg><use href="#i-box"/></svg></div><h3>Empacotamento e materiais</h3><p>Embalamos louças, roupas e objetos para que tudo chegue inteiro. Também fornecemos <strong>caixas e plástico bolha</strong> para sua mudança ser transportada com todo o cuidado que merece.</p><a href="#" data-wa="Olá! Tenho interesse em empacotamento / caixas e plástico bolha.">Pedir orçamento →</a></div>
       <div class="card"><div class="ic"><svg><use href="#i-trash"/></svg></div><h3>Retirada de material e descarte</h3><p>Descarte de móveis velhos e entulho leve. A gente retira e leva embora, sem você se preocupar.</p><a href="#" data-wa="Olá! Preciso de retirada de material / descarte.">Pedir orçamento →</a></div>
+      <div class="card card-wide"><div class="ic"><svg><use href="#i-bolt"/></svg></div><div style="flex:1"><h3>Pequenos reparos na mudança <span style="font-size:.8rem;font-weight:700;color:var(--gold-text);white-space:nowrap">· sob consulta</span></h3><p>Pequenos reparos de pedreiro ou elétricos ligados à sua mudança, para deixar tudo no lugar. Somente junto com o serviço de mudança: não fazemos obras nem instalações elétricas avulsas.</p></div><a href="#" data-wa="Olá! Vou fazer uma mudança e preciso de pequenos reparos de pedreiro/elétricos. Vocês podem avaliar?">Consultar →</a></div>
     </div>
   </div>
 </section>
@@ -537,6 +551,7 @@ footer .logo{color:#fff;margin-bottom:12px}
       <details><summary>Vocês embalam as coisas?</summary><p>Sim, oferecemos o serviço de empacotamento para louças, roupas e objetos. Se preferir embalar por conta própria, orientamos como fazer.</p></details>
       <details><summary>Vocês fornecem caixas e plástico bolha?</summary><p>Sim. Se precisar, fornecemos caixas e plástico bolha para que sua mudança seja transportada com todo o cuidado que merece. É só avisar no pedido de orçamento.</p></details>
       <details><summary>Vocês fazem mudança para outras cidades ou outros estados?</summary><p>Sim. Nosso atendimento principal é Florianópolis, São José, Palhoça e Biguaçu, e fazemos com frequência a rota Florianópolis ⇄ Balneário Camboriú e cidades próximas. Também atendemos qualquer cidade de Santa Catarina e mudanças interestaduais, sob consulta. Chame no WhatsApp informando a origem, o destino e o que vai levar para receber o orçamento.</p></details>
+      <details><summary>Vocês fazem reparos de pedreiro ou elétricos?</summary><p>Fazemos apenas pequenos reparos de pedreiro ou elétricos ligados à sua mudança, sob consulta. Não realizamos obras nem instalações elétricas fora do serviço de mudança. Informe no orçamento o que precisa.</p></details>
       <details><summary>Com quanto tempo de antecedência devo agendar?</summary><p>Quanto antes, melhor, principalmente no fim e no começo do mês e aos sábados, que são os dias mais procurados. Para fretes pequenos, muitas vezes conseguimos no mesmo dia ou no dia seguinte.</p></details>
     </div>
   </div>
@@ -562,7 +577,7 @@ footer .logo{color:#fff;margin-bottom:12px}
     </div>
     <div>
       <h4>Serviços</h4>
-      <ul><li>Mudança residencial</li><li>Mudança comercial</li><li>Pequenas mudanças</li><li>Desmontagem e montagem</li><li>Empacotamento</li><li>Caixas e plástico bolha</li><li>Retirada de material</li></ul>
+      <ul><li>Mudança residencial</li><li>Mudança comercial</li><li>Pequenas mudanças</li><li>Desmontagem e montagem</li><li>Empacotamento</li><li>Caixas e plástico bolha</li><li>Pequenos reparos na mudança</li><li>Retirada de material</li></ul>
     </div>
     <div>
       <h4>Contato</h4>
@@ -627,6 +642,7 @@ footer .logo{color:#fff;margin-bottom:12px}
       "Indo para: " + (v("f-para") || "—") + " · " + local("para") + "\n" +
       "Tamanho: " + v("f-imovel") + "\n" +
       "Ajudantes: " + v("f-ajuda") + "\n" +
+      "Pequenos reparos: " + v("f-reparos") + "\n" +
       "Caixas/plástico bolha: " + v("f-caixas") + "\n" +
       "Data: " + data;
     var url = waLink(msg);
