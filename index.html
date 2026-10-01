@@ -25,7 +25,7 @@
   // Registra 1 conversão por clique em qualquer botão de WhatsApp (e no envio do formulário)
   function conversaoWhats(origem){
     if (CONVERSAO_WHATS) gtag("event", "conversion", { send_to: CONVERSAO_WHATS, transport_type: "beacon" });
-    if (GA4_ID) gtag("event", "clique_whatsapp", { origem: origem, transport_type: "beacon" });
+    if (GA4_ID) gtag("event", "clique_whatsapp", { send_to: GA4_ID, origem: origem, transport_type: "beacon" });
   }
 </script>
 <meta name="description" content="Floripa Fretes e Mudanças, mais de 20 anos de experiência. Mudanças residenciais e comerciais, pequenas mudanças e fretes em Florianópolis, São José, Palhoça e Biguaçu. Mudanças Florianópolis ⇄ Balneário Camboriú, todo SC e outros estados. Desmontagem, montagem e embalagem. Orçamento grátis pelo WhatsApp (48) 99951-5588.">
@@ -729,8 +729,8 @@ footer .logo{color:#fff;margin-bottom:12px}
      Para adicionar uma foto: envie para a pasta "fotos" no GitHub.
      Para remover: apague da pasta. Não precisa mexer neste arquivo.
      Se o site estiver em domínio próprio, preencha usuário e repositório abaixo. */
-  var GITHUB_USUARIO = "";        // ex.: "floripafretes"
-  var GITHUB_REPOSITORIO = "";    // ex.: "floripa-fretes"
+  var GITHUB_USUARIO = "floripafretes";        // ex.: "floripafretes"
+  var GITHUB_REPOSITORIO = "floripafretes.github.io";    // ex.: "floripa-fretes"
   var PASTA_FOTOS = "fotos";
   (function(){
     var user = GITHUB_USUARIO, repo = GITHUB_REPOSITORIO;
