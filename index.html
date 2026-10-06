@@ -754,9 +754,10 @@ footer .logo{color:#fff;margin-bottom:12px}
   function carregarAvaliacoes(){
     var feito = false;
     function fim(){ if (!feito) { feito = true; iniciarCarrossel(); } }
-    setTimeout(fim, 2500);
+    setTimeout(fim, 4000);
     fetch("avaliacoes.json?v=" + Date.now()).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
-      if (!d || feito) return fim();
+      if (!d) return fim();
+      // a nota aparece sempre, mesmo se o arquivo demorar a chegar
       if (d.nota && d.total) {
         var nota = Number(d.nota).toFixed(1).replace(".", ",");
         document.querySelectorAll(".js-nota").forEach(function(e){ e.textContent = nota; });
@@ -765,7 +766,7 @@ footer .logo{color:#fff;margin-bottom:12px}
         document.getElementById("hero-nota").innerHTML = "<strong>" + nota + " no Google</strong> · " + d.total + " avaliações de clientes";
       }
       var boas = (d.avaliacoes || []).filter(function(a){ return a.nota >= 4 && a.texto; });
-      if (boas.length >= 3) {
+      if (boas.length >= 3 && !feito) {
         var track = document.querySelector("#reviews .track"); track.innerHTML = "";
         boas.forEach(function(a){
           var c = document.createElement("div"); c.className = "quote-card";
