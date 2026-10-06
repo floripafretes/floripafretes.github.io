@@ -1,8 +1,32 @@
 {
-  "atualizado": null,
-  "nota": null,
-  "total": null,
+  "atualizado": "2026-10-06T13:45:34.751Z",
+  "nota": 4.8,
+  "total": 55,
   "avaliacoes": [
+    {
+      "autor": "Stéfanie Roa",
+      "nota": 5,
+      "texto": "Fiz o frete da minha mudança com\neles, Rodrigo e sua equipe são ótimos! São rápidos e gentis, adorei!! Preço justo!!\nIndico muito!!!",
+      "data": "2026-09-25"
+    },
+    {
+      "autor": "Luiza Almeida Fischer",
+      "nota": 5,
+      "texto": "super profissionais e cuidadosos! indico demais o serviço!",
+      "data": "2026-09-11"
+    },
+    {
+      "autor": "Mariana Adami Borgert",
+      "nota": 5,
+      "texto": "Excelentes profissionais! Recomendo muito o trabalho deles, organizados e ágeis.",
+      "data": "2025-09-23"
+    },
+    {
+      "autor": "Klay Silva",
+      "nota": 5,
+      "texto": "Profissionais excelentes, muito cuidadosos, queridos e pacientes. Além do preço cobrado ser muito justo. Recomendo o trabalho!",
+      "data": "2025-09-12"
+    },
     {
       "autor": "Oscar Bruna Romero",
       "nota": 5,
@@ -16,21 +40,9 @@
       "data": ""
     },
     {
-      "autor": "Klay Silva",
-      "nota": 5,
-      "texto": "Profissionais excelentes, muito cuidadosos, queridos e pacientes. Além do preço cobrado ser muito justo. Recomendo o trabalho!",
-      "data": ""
-    },
-    {
       "autor": "Leonardo Esgalbo",
       "nota": 5,
       "texto": "Super atenciosos, rápidos e cuidadosos. Preço justo. Chamarei novamente sempre que necessário e recomendo a quem precisar!",
-      "data": ""
-    },
-    {
-      "autor": "Mariana Adami Borgert",
-      "nota": 5,
-      "texto": "Excelentes profissionais! Recomendo muito o trabalho deles, organizados e ágeis.",
       "data": ""
     }
   ]
