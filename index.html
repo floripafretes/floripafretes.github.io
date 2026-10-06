@@ -352,7 +352,7 @@ footer .logo{color:#fff;margin-bottom:12px}
         <li><svg><use href="#i-check"/></svg>Cuidado total com seus móveis</li>
         <li><svg><use href="#i-check"/></svg>Fornecemos caixas e plástico bolha</li>
       </ul>
-      <a class="hero-rating" href="#avaliacoes"><span class="stars">★★★★★</span><span><strong>Veja as avaliações dos clientes no Google →</strong></span></a>
+      <a class="hero-rating" href="#avaliacoes"><span class="stars">★★★★★</span><span id="hero-nota"><strong>Veja as avaliações dos clientes no Google →</strong></span></a>
     </div>
 
     <form class="quote" id="orcamento" novalidate>
@@ -489,10 +489,22 @@ footer .logo{color:#fff;margin-bottom:12px}
     <div class="center">
       <span class="eyebrow">Quem já mudou com a gente</span>
       <h2>O que nossos clientes dizem no Google</h2>
-      <p class="lead">Avaliações reais, atualizadas automaticamente.</p>
+      <p class="lead">Avaliações reais de clientes no Google Maps, atualizadas automaticamente.</p>
     </div>
-    <div class="ti-box">
-      <script defer async src='https://cdn.trustindex.io/loader.js?1aaa05082453477255563d0a76c'></script>
+    <div class="g-summary" id="g-summary" hidden>
+      <span class="g-logo">G</span><strong class="js-nota"></strong><span class="stars">★★★★★</span><span class="g-count"><span class="js-total"></span> avaliações no Google</span>
+    </div>
+    <div style="margin-top:34px">
+    <div class="carousel" id="reviews">
+    <div class="track">
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“A turma do Floripa Fretes e Mudanças, com o Rodrigo no comando, nos ajudou (pela segunda vez já) de forma impecável. Fizeram o transporte entre 3 lugares (o nosso Café e 2 apartamentos), com extrema correção, pontualidade, simpatia e eficiência. Foi top, 100%.”</p><div class="who"><div class="avatar">O</div><div><strong>Oscar Bruna Romero</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Muito bom o serviço realizado! Desde o atendimento inicial até a entrega dos móveis no destino. Foram muito cuidadosos, rápidos e eficientes. E o melhor: preço muito justo! Super indico!”</p><div class="who"><div class="avatar">L</div><div><strong>Lais Campos</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Profissionais excelentes, muito cuidadosos, queridos e pacientes. Além do preço cobrado ser muito justo. Recomendo o trabalho!”</p><div class="who"><div class="avatar">K</div><div><strong>Klay Silva</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Super atenciosos, rápidos e cuidadosos. Preço justo. Chamarei novamente sempre que necessário e recomendo a quem precisar!”</p><div class="who"><div class="avatar">L</div><div><strong>Leonardo Esgalbo</strong><span>Avaliação no Google</span></div></div></div>
+      <div class="quote-card"><div class="stars">★★★★★</div><p>“Excelentes profissionais! Recomendo muito o trabalho deles, organizados e ágeis.”</p><div class="who"><div class="avatar">M</div><div><strong>Mariana Adami Borgert</strong><span>Avaliação no Google</span></div></div></div>
+    </div>
+    <div class="dots"></div>
+    </div>
     </div>
     <div class="center" style="margin-top:22px"><a class="g-link" href="https://www.google.com/maps/place/?q=place_id:ChIJaVklUP85J5URQGmIEHzvdA0" target="_blank" rel="noopener">Ver todas as avaliações no Google →</a></div>
   </div>
@@ -697,6 +709,77 @@ footer .logo{color:#fff;margin-bottom:12px}
   document.getElementById("ano").textContent = new Date().getFullYear();
 
 
+
+  /* ===== Carrossel de avaliações: mostra 3 (2 no tablet, 1 no celular) e gira sozinho ===== */
+  function iniciarCarrossel(){
+    var box = document.getElementById("reviews"), track = box.querySelector(".track");
+    var cards = [].slice.call(track.children), total = cards.length, idx = 0, timer;
+    var dots = box.querySelector(".dots");
+    // embaralha a ordem a cada visita para parecer sempre "novo"
+    cards.sort(function(){ return Math.random() - .5; }).forEach(function(c){ track.appendChild(c); });
+    cards.forEach(function(c){ track.appendChild(c.cloneNode(true)); }); // cópias para o loop infinito
+    for (var i = 0; i < total; i++) {
+      var d = document.createElement("button"); d.setAttribute("aria-label", "Avaliação " + (i + 1));
+      d.onclick = (function(n){ return function(){ go(n); restart(); }; })(i);
+      dots.appendChild(d);
+    }
+    function step(){ var c = track.children[0]; return c.getBoundingClientRect().width + parseFloat(getComputedStyle(c).marginRight); }
+    function go(n, instant){
+      idx = n;
+      track.style.transition = instant ? "none" : "";
+      track.style.transform = "translateX(" + (-idx * step()) + "px)";
+      [].forEach.call(dots.children, function(d, i){ d.classList.toggle("on", i === idx % total); });
+    }
+    function next(){
+      go(idx + 1);
+      if (idx === total) setTimeout(function(){ go(0, true); }, 650);
+    }
+    function restart(){ clearInterval(timer); timer = setInterval(next, 5000); }
+    box.addEventListener("mouseenter", function(){ clearInterval(timer); });
+    box.addEventListener("mouseleave", restart);
+    var x0 = null;
+    box.addEventListener("touchstart", function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+    box.addEventListener("touchend", function(e){
+      if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) { dx < 0 ? next() : go((idx - 1 + total) % total); restart(); }
+    });
+    window.addEventListener("resize", function(){ go(idx, true); });
+    go(0, true); restart();
+  }
+  carregarAvaliacoes();
+
+
+  /* ===== Avaliações do Google: lê avaliacoes.json, que o GitHub atualiza sozinho 2x por dia
+     (rotina em .github/workflows/avaliacoes-google.yml). Se não carregar, ficam as avaliações escritas no HTML. ===== */
+  function carregarAvaliacoes(){
+    var feito = false;
+    function fim(){ if (!feito) { feito = true; iniciarCarrossel(); } }
+    setTimeout(fim, 2500);
+    fetch("avaliacoes.json?v=" + Date.now()).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+      if (!d || feito) return fim();
+      if (d.nota && d.total) {
+        var nota = Number(d.nota).toFixed(1).replace(".", ",");
+        document.querySelectorAll(".js-nota").forEach(function(e){ e.textContent = nota; });
+        document.querySelectorAll(".js-total").forEach(function(e){ e.textContent = d.total; });
+        document.getElementById("g-summary").hidden = false;
+        document.getElementById("hero-nota").innerHTML = "<strong>" + nota + " no Google</strong> · " + d.total + " avaliações de clientes";
+      }
+      var boas = (d.avaliacoes || []).filter(function(a){ return a.nota >= 4 && a.texto; });
+      if (boas.length >= 3) {
+        var track = document.querySelector("#reviews .track"); track.innerHTML = "";
+        boas.forEach(function(a){
+          var c = document.createElement("div"); c.className = "quote-card";
+          c.innerHTML = '<div class="stars"></div><p></p><div class="who"><div class="avatar"></div><div><strong></strong><span>Avaliação no Google</span></div></div>';
+          c.querySelector(".stars").textContent = "★★★★★".slice(0, a.nota);
+          c.querySelector("p").textContent = "“" + a.texto + "”";
+          c.querySelector(".avatar").textContent = (a.autor || "?").trim().charAt(0).toUpperCase();
+          c.querySelector("strong").textContent = a.autor || "Cliente";
+          track.appendChild(c);
+        });
+      }
+      fim();
+    }).catch(fim);
+  }
 
   /* ===== Vídeos: tocam sem som quando aparecem na tela e pausam quando saem; botão liga o som ===== */
   (function(){
