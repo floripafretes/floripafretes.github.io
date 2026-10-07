@@ -1,5 +1,5 @@
 {
-  "atualizado": "2026-10-06T21:09:53.601Z",
+  "atualizado": "2026-10-07T09:11:44.318Z",
   "nota": 4.8,
   "total": 55,
   "avaliacoes": [
@@ -28,21 +28,27 @@
       "data": "2025-09-12"
     },
     {
+      "autor": "Leonardo Esgalbo",
+      "nota": 5,
+      "texto": "Super atenciosos, rápidos e cuidadosos. Preço justo. Chamarei novamente sempre que necessário e recomendo a quem precisar!\n🤩🤩🤩🤩🤩",
+      "data": "2025-09-10"
+    },
+    {
       "autor": "Oscar Bruna Romero",
       "nota": 5,
-      "texto": "A turma do Floripa Fretes e Mudanças, com o Rodrigo no comando, nos ajudou (pela segunda vez já) de forma impecável. Fizeram o transporte entre 3 lugares (o nosso Café e 2 apartamentos), com extrema correção, pontualidade, simpatia e eficiência. Foi top, 100%.",
-      "data": ""
+      "texto": "A turma do Floripa Fretes e Mudanças, com o Rodrigo no comando, nos ajudou (pela segunda vez já) de forma impecável. Fizeram o transporte de diferentes itens entre 3 lugares (o nosso Café e 2 apartamentos),  com extrema correção, pontualidade, simpatia e eficiência, e ainda com a flexibilidade necessária para…",
+      "data": "2025-08-30"
+    },
+    {
+      "autor": "Luciane Mancuso",
+      "nota": 5,
+      "texto": "Super recomendo! Atenciosos, cuidadosos, educados.",
+      "data": "2025-08-21"
     },
     {
       "autor": "Lais Campos",
       "nota": 5,
       "texto": "Muito bom o serviço realizado! Desde o atendimento inicial até a entrega dos móveis no destino. Foram muito cuidadosos, rápidos e eficientes. E o melhor: preço muito justo! Super indico!",
-      "data": ""
-    },
-    {
-      "autor": "Leonardo Esgalbo",
-      "nota": 5,
-      "texto": "Super atenciosos, rápidos e cuidadosos. Preço justo. Chamarei novamente sempre que necessário e recomendo a quem precisar!",
       "data": ""
     }
   ]
