@@ -1,7 +1,7 @@
 {
-  "atualizado": "2026-10-18T21:16:15.642Z",
+  "atualizado": "2026-10-19T09:28:37.815Z",
   "nota": 4.8,
-  "total": 55,
+  "total": 56,
   "avaliacoes": [
     {
       "autor": "Stéfanie Roa",
@@ -44,6 +44,12 @@
       "nota": 5,
       "texto": "Super recomendo! Atenciosos, cuidadosos, educados.",
       "data": "2025-08-21"
+    },
+    {
+      "autor": "rita de cassia",
+      "nota": 5,
+      "texto": "Excelente,profissional,educado pontual com ágil e prestativo , super recomendado.\nRodrigues Fretes",
+      "data": "2023-05-25"
     },
     {
       "autor": "Lais Campos",
