@@ -1,8 +1,20 @@
 {
-  "atualizado": "2026-10-21T09:25:54.605Z",
-  "nota": 4.8,
-  "total": 56,
+  "atualizado": "2026-10-21T21:22:22.753Z",
+  "nota": 4.9,
+  "total": 95,
   "avaliacoes": [
+    {
+      "autor": "Alexis Cavichion",
+      "nota": 5,
+      "texto": "Cuidadoso, pontual e prestativo. Recomendo!",
+      "data": "2026-10-21"
+    },
+    {
+      "autor": "Natan Silva",
+      "nota": 5,
+      "texto": "Super indico, pessoas atenciosas e cuidadosas, muito simpáticos, tem o menino Dionatas que é muito gente boa",
+      "data": "2026-10-21"
+    },
     {
       "autor": "Stéfanie Roa",
       "nota": 5,
