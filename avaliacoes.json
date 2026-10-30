@@ -1,8 +1,14 @@
 {
-  "atualizado": "2026-10-30T00:36:31.932Z",
+  "atualizado": "2026-10-30T15:31:40.961Z",
   "nota": 4.9,
-  "total": 98,
+  "total": 103,
   "avaliacoes": [
+    {
+      "autor": "Flavio Oliveira",
+      "nota": 5,
+      "texto": "Serviço de qualidade, capricho e cuidadoso na mudança.",
+      "data": "2026-10-30"
+    },
     {
       "autor": "Vero Narra",
       "nota": 5,
@@ -80,6 +86,12 @@
       "nota": 5,
       "texto": "Excelente,profissional,educado pontual prestativo , super recomendado obrigado\nRodrigues Fretes",
       "data": "2023-05-25"
+    },
+    {
+      "autor": "rodrigo koerich vidal",
+      "nota": 5,
+      "texto": "Melhor atendimento! Pessoas de confiança, atencios,muito cuidado com tudo! Parabéns",
+      "data": "2020-04-22"
     },
     {
       "autor": "Lais Campos",
