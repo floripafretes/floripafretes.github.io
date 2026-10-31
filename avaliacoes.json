@@ -1,7 +1,7 @@
 {
-  "atualizado": "2026-10-31T00:21:50.039Z",
+  "atualizado": "2026-10-31T15:01:33.408Z",
   "nota": 4.9,
-  "total": 103,
+  "total": 104,
   "avaliacoes": [
     {
       "autor": "jamile santos",
@@ -13,6 +13,12 @@
       "autor": "Joelton Nunes",
       "nota": 5,
       "texto": "Muito trabalhador recomendo",
+      "data": "2026-10-30"
+    },
+    {
+      "autor": "Sueli Antunes",
+      "nota": 5,
+      "texto": "Fiz mudança com ele fiquei muito satisfeita com o cuidado e eficiência eu recomendo",
       "data": "2026-10-30"
     },
     {
