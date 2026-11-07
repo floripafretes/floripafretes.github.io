@@ -1,8 +1,14 @@
 {
-  "atualizado": "2026-11-06T16:35:38.619Z",
+  "atualizado": "2026-11-07T00:36:38.095Z",
   "nota": 4.9,
-  "total": 104,
+  "total": 105,
   "avaliacoes": [
+    {
+      "autor": "Evandro Soares",
+      "nota": 5,
+      "texto": "Gostaria de agradecer pelo excelente serviço prestado durante minha mudança! Desde o atendimento até o transporte e descarregamento, tudo foi realizado com muito cuidado e profissionalismo. Serviço de qualidade, preço justo e muita atenção. Recomendo a todos que precisarem de um frete ou serviço de mudança. Muito…",
+      "data": "2026-11-06"
+    },
     {
       "autor": "Amábily Viana",
       "nota": 5,
@@ -116,12 +122,6 @@
       "nota": 5,
       "texto": "Melhor atendimento! Pessoas de confiança, atencios,muito cuidado com tudo! Parabéns",
       "data": "2020-04-22"
-    },
-    {
-      "autor": "Lais Campos",
-      "nota": 5,
-      "texto": "Muito bom o serviço realizado! Desde o atendimento inicial até a entrega dos móveis no destino. Foram muito cuidadosos, rápidos e eficientes. E o melhor: preço muito justo! Super indico!",
-      "data": ""
     }
   ]
 }
