@@ -375,11 +375,11 @@ footer .logo{color:#fff;margin-bottom:12px}
         <div class="field"><label for="f-data">Data desejada</label><input id="f-data" type="date"></div>
       </div>
       <div class="row2 keep">
-        <div class="field"><label for="f-andar-de">Andar (saída)</label><select id="f-andar-de"><option>Térreo/casa</option><option>1º andar</option><option>2º andar</option><option>3º andar</option><option>4º andar</option><option>5º andar ou mais</option></select></div>
+        <div class="field"><label for="f-andar-de">Andar (saída)</label><select id="f-andar-de"><option>Térreo/casa</option></select></div>
         <div class="field"><label for="f-elev-de">Elevador (saída)</label><select id="f-elev-de"><option>Sim</option><option>Não</option></select></div>
       </div>
       <div class="row2 keep">
-        <div class="field"><label for="f-andar-para">Andar (destino)</label><select id="f-andar-para"><option>Térreo/casa</option><option>1º andar</option><option>2º andar</option><option>3º andar</option><option>4º andar</option><option>5º andar ou mais</option></select></div>
+        <div class="field"><label for="f-andar-para">Andar (destino)</label><select id="f-andar-para"><option>Térreo/casa</option></select></div>
         <div class="field"><label for="f-elev-para">Elevador (destino)</label><select id="f-elev-para"><option>Sim</option><option>Não</option></select></div>
       </div>
       <div class="row2">
@@ -703,6 +703,8 @@ footer .logo{color:#fff;margin-bottom:12px}
 
   ["de","para"].forEach(function(k){
     var an = document.getElementById("f-andar-" + k), el = document.getElementById("f-elev-" + k);
+    // andares de 1 a 100 (gerados aqui para não repetir 100 linhas no HTML)
+    for (var n = 1; n <= 100; n++) { var o = document.createElement("option"); o.textContent = n + "º andar"; an.appendChild(o); }
     function sync(){ el.disabled = an.value.indexOf("Térreo") === 0; }
     an.addEventListener("change", sync); sync();
   });
